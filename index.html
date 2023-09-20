@@ -1,62 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PW Skills | Counter</title>
-    <!-- icon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="16x16"
-      href="/images/favicon.ico"
-    />
-    <!-- imported the css file -->
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- Font family import -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <nav class="nav_bar">
-        <div class="container">
-          <a href="https://pwskills.com/">
-            <img src="/images/pwskills-logo.png" alt="logo" class="nav_bar_logo"
-          /></a>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" class="css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!--  Nav Bar -->
+<nav class="flex-div">
+<!-- left -->
+  <div class="nav-left flex-div">
+    <i  class="fa-solid fa-bars" ></i>
+    <img src="https://img.icons8.com/?size=1x&id=9a46bTk3awwI&format=png" alt="ABC" class="logo">
+    
+  </div>
+<!-- middle -->
+  <div class="nav-middle flex-div">
+       <div class="search-box flex-div"> 
+        <input type="text" placeholder="search">
+        <a href=""><img src="https://img.icons8.com/?size=1x&id=59878&format=png"alt="hlo">
+        </a>
+       </div>
 
-      <section class="container">
-        <div class="counter">
-          <div class="counter_body">
-            <h1 class="counter_body_heading">Counter</h1>
-            <p id="counter" class="counter_count_display">0</p>
-            <div class="counter_button">
-              <button
-                id="decrement"
-                class="counter_decrement"
-                onclick="{decrementButton}"
-              >
-                - Decrement
-              </button>
-              <button
-                id="increment"
-                class="counter_increment"
-                onclick="{incrementButton}"
-              >
-                + Increment
-              </button>
+       <img src="https://img.icons8.com/?size=1x&id=9x4KEdftPm8O&format=png" alt="voice" class="mic-icon">
+      </div>
+<!-- right -->
+  <div class="nav-right flex-div">
+   <a href=""><i class="fa-solid fa-video"></i></a> 
+    <!-- <img src="https://img.icons8.com/?size=1x&id=2MF6ryM9oRyF&format=png" alt="cde"> -->
+    <!-- <img src="https://img.icons8.com/?size=1x&id=89171&format=png" alt="cde"> -->
+    
+   <a href=""><i class="fa-regular fa-bell"></i></a>  
+   <a href=""><i class="fa-regular fa-circle-user"></i></a>  
+    <!-- <img src="" alt="cde" class="user-icon"> -->
+  </div>
+</nav>
+
+<div class="tags">
+<div class="tag dark">All</div>
+<div class="tag light">Mixes</div>
+<div class="tag light">HTML</div>
+<div class="tag light">Comedy</div>
+<div class="tag light">Computer</div>
+</div>
+<!--  ----------------------------SideBar------------------ -->
+   <div class="sidebar">
+       <div class="shortcut-links">
+        <a href=""><i class="fa-solid fa-house"></i><p>Home</p></a>
+        <a href=""><i class="fa-solid fa-compass"></i><p>Explore</p></a>
+        <a href=""><i class="fa-solid fa-fire"></i><p>Trending</p></a>
+        <a href=""><i class="fa-solid fa-book"></i><p>Library</p></a>
+        <a href=""><i class="fa-solid fa-eye"></i><p>History</p></a>
+        <a href=""><i class="fa-solid fa-eject"></i><p>playlist</p></a>
+        <a href=""><i class="fa-solid fa-message"></i><p>Messages</p></a>
+        <a href=""><i class="fa-solid fa-angle-down"></i></a><p>Show More</p></a>
+        <hr>
+
+       </div>
+       <div class="subscribed-list">
+
+        <h3>SUBSCRIBED</h3>
+        <a href=""><img src="https://images.pexels.com/photos/17847846/pexels-photo-17847846/free-photo-of-sunset-fashion-beach-woman.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""><p>JACK</p></a>
+        <a href=""><img src="https://images.pexels.com/photos/17864986/pexels-photo-17864986.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""><p>Tom</p></a>
+        <a href=""><img src="https://images.pexels.com/photos/17772401/pexels-photo-17772401/free-photo-of-light-fashion-people-woman.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""><p>JACKY</p></a>
+        <a href=""><img src="https://images.pexels.com/photos/17015387/pexels-photo-17015387/free-photo-of-fashion-man-people-model.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""><p>HOMAR</p></a>
+        <a href=""><img src="https://images.pexels.com/photos/17491661/pexels-photo-17491661/free-photo-of-blonde-woman-taking-pictures-with-camera.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""><p>SUNNY</p></a>
+       </div>
+
+   </div>
+
+
+   <!--  ------------Main ------------------- -->
+
+   <div class="container">
+        <div class="banner">
+          <img src="https://media.istockphoto.com/id/1413483196/photo/digital-marketing-concept.jpg?b=1&s=612x612&w=0&k=20&c=_Kn3Nrd4y_b2sNmAogmc-jA3ghrDv4KBXmL90BAIctg=" alt="badi photo">
+        </div>
+
+        <div class="list-container">
+          <!-- 1-video -->
+           <div class="vid-list">
+              <a href="video-play.html"><img src="https://images.pexels.com/photos/17920870/pexels-photo-17920870/free-photo-of-geese.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+              <div class="flex-div">
+                <img src="https://images.pexels.com/photos/17763903/pexels-photo-17763903/free-photo-of-humboldtforum-berlin.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+                <div class="vid-info">
+                   <a href="video-play.html">MY first platform </a>
+                   <p>Easy View</p>
+                   <p>100k view  &bull; 1 days</p>
+
+
+                </div>
+              </div>
+           </div>
+
+           <!-- 2 vdo -->
+           <div class="vid-list">
+            <a href="video-play.html"><img src="https://images.pexels.com/photos/17908434/pexels-photo-17908434/free-photo-of-light-city-road-dawn.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+            <div class="flex-div">
+              <img src="https://images.pexels.com/photos/17883973/pexels-photo-17883973/free-photo-of-man-people-car-vehicle.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+              <div class="vid-info">
+                 <a href="">MY first platform </a>
+                 <p>Easy View</p>
+                 <p>100k view  &bull; 1 days</p>
+
+
+              </div>
+            </div>
+         </div>
+
+         <!-- 3vdo -->
+         <div class="vid-list">
+          <a href="video-play.html"><img src="https://images.pexels.com/photos/17901581/pexels-photo-17901581/free-photo-of-sea-landscape-beach-vacation.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+          <div class="flex-div">
+            <img src="https://images.pexels.com/photos/17901581/pexels-photo-17901581/free-photo-of-sea-landscape-beach-vacation.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+            <div class="vid-info">
+               <a href="">MY first platform </a>
+               <p>Easy View</p>
+               <p>100k view  &bull; 1 days</p>
+
+
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+       </div>
+       <!-- 4vdo -->
 
-    <!-- imported js file below -->
-    <script src="./counter.js"></script>
-  </body>
+       <div class="vid-list">
+        <a href="video-play.html"><img src="https://images.pexels.com/photos/17920870/pexels-photo-17920870/free-photo-of-geese.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+        <div class="flex-div">
+          <img src="https://images.pexels.com/photos/17763903/pexels-photo-17763903/free-photo-of-humboldtforum-berlin.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+          <div class="vid-info">
+             <a href="">MY first platform </a>
+             <p>Easy View</p>
+             <p>100k view  &bull; 1 days</p>
+
+
+          </div>
+        </div>
+     </div>
+     <!-- 5 vdo -->
+     <div class="vid-list">
+      <a href="video-play.html"><img src="https://images.pexels.com/photos/17894387/pexels-photo-17894387/free-photo-of-frederik-meijer-gardens-and-sculpture-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+      <div class="flex-div">
+        <img src="https://images.pexels.com/photos/17894387/pexels-photo-17894387/free-photo-of-frederik-meijer-gardens-and-sculpture-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+        <div class="vid-info">
+           <a href="">MY first platform </a>
+           <p>Easy View</p>
+           <p>100k view  &bull; 1 days</p>
+
+
+        </div>
+      </div>
+   </div>
+<!-- 6  -->
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17892082/pexels-photo-17892082/free-photo-of-man-people-sport-strength.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17892082/pexels-photo-17892082/free-photo-of-man-people-sport-strength.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+
+    </div>
+  </div>
+</div>
+<!--  7 -->
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17885606/pexels-photo-17885606/free-photo-of-field-summer-garden-grass.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17885606/pexels-photo-17885606/free-photo-of-field-summer-garden-grass.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17912191/pexels-photo-17912191/free-photo-of-man-people-woman-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17912191/pexels-photo-17912191/free-photo-of-man-people-woman-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17883973/pexels-photo-17883973/free-photo-of-man-people-car-vehicle.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17883973/pexels-photo-17883973/free-photo-of-man-people-car-vehicle.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17896019/pexels-photo-17896019/free-photo-of-love-people-woman-summer.png?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17896019/pexels-photo-17896019/free-photo-of-love-people-woman-summer.png?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17908499/pexels-photo-17908499/free-photo-of-glaciar-viedma.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17908499/pexels-photo-17908499/free-photo-of-glaciar-viedma.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17901689/pexels-photo-17901689/free-photo-of-sea-landscape-mountains-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17901689/pexels-photo-17901689/free-photo-of-sea-landscape-mountains-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17912891/pexels-photo-17912891/free-photo-of-give-bees-a-chanche.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17912891/pexels-photo-17912891/free-photo-of-give-bees-a-chanche.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17910516/pexels-photo-17910516/free-photo-of-durian.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17910516/pexels-photo-17910516/free-photo-of-durian.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17895957/pexels-photo-17895957/free-photo-of-wood-bird-field-animal.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17895957/pexels-photo-17895957/free-photo-of-wood-bird-field-animal.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="vid-list">
+  <a href="video-play.html"><img src="https://images.pexels.com/photos/17894613/pexels-photo-17894613/free-photo-of-eeve-art-25.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="tumbnail" class="thumbnail"></a>
+  <div class="flex-div">
+    <img src="https://images.pexels.com/photos/17894613/pexels-photo-17894613/free-photo-of-eeve-art-25.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="png">
+    <div class="vid-info">
+       <a href="">MY first platform </a>
+       <p>Easy View</p>
+       <p>100k view  &bull; 1 days</p>
+
+    </div>
+  </div>
+</div>
+
+        </div>
+    
+   </div>
+
+ <script src="./script.js"></script>
+</body>
 </html>

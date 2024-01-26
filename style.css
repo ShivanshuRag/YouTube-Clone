@@ -52,7 +52,7 @@ nav{
 
 .nav-left .logo{
 
-  width: 30px;
+  width: 100px;
   gap: 5px;
 }
  
@@ -109,7 +109,10 @@ nav{
   background: rgb(238,238,238);
   color: rgb(67,67,67);
 }
-
+.tag:hover{
+  background: #000;
+  color: #fff;
+}
 
 
 /* ------- side bar ---------- */
@@ -128,6 +131,12 @@ nav{
 
   width: 20px;
   margin-right: 20px;
+}
+
+.shortcut-links :hover{
+color:  #ed3833;
+
+
 }
 .shortcut-links a{
 
@@ -236,7 +245,9 @@ nav{
 
   width: 35px;
   margin-right: 10px;
-  border-radius: 50%;
+  border-radius:50%;
+  padding: px px;
+  
 }
 
 .vid-info {
@@ -291,6 +302,32 @@ nav{
 
 
 /* ------------------------- video play page --------------------- */
+
+
+
+
+
+
+.search-icon:hover{
+  background-color: rgb(211, 199, 199);
+  border-radius: 50%;
+  
+  padding: 2px 2px;  
+}
+.mic-icon:hover{
+  background-color: rgb(228, 216, 216);
+  border-radius: 50%;
+  
+  padding: 8px 3px; 
+}
+.nav-right a :hover{
+
+  background-color: rgb(228, 216, 216);
+  border-radius: 50%;
+  padding: 8px 5px;
+
+}
+
 
 .play-container{
 
